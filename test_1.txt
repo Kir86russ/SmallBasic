@@ -1,0 +1,18 @@
+INPUT "write value C = ", C
+A = 10
+B = 20
+GOSUB 100
+GOTO 300
+C = 1703
+300 GOSUB 200
+PRINT "C = ", C
+END
+
+100 A = 100
+PRINT "A = ", A
+RETURN
+
+
+200 B = 200
+PRINT "B = ", B
+RETURN
