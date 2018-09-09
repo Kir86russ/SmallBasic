@@ -1,18 +1,22 @@
-INPUT "write value C = ", C
-A = 10
-B = 20
-GOSUB 100
-GOTO 300
-C = 1703
-300 GOSUB 200
-PRINT "C = ", C
+INPUT a
+INPUT b
+c = a + b
+
+IF a > b THEN
+PRINT "a > b"
+ENDFI
+
+GOTO 100
+
+IF a < b THEN
+PRINT "a < b"
+ENDFI
+
+IF a = b THEN
+PRINT "a = b"
+ENDFI
+
+IF a <> b THEN
+PRINT "a <> b"
+ENDFI
 END
-
-100 A = 100
-PRINT "A = ", A
-RETURN
-
-
-200 B = 200
-PRINT "B = ", B
-RETURN
